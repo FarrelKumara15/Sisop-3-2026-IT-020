@@ -131,10 +131,12 @@ Disconnecting User <br/>
 <img width="417" height="293" alt="2026-04-29 12:36:36" src="https://github.com/user-attachments/assets/29aea362-a415-42d8-a568-352922ce6c9f" /> <br/>
 Kondisi jika login user dengan nama yang sama <br/>
 <img width="378" height="114" alt="2026-04-29 12:37:35" src="https://github.com/user-attachments/assets/1961cf0a-b37f-499c-a998-ec08c96015b1" /> <br/>
-Isi dari 'history.log', setelah selesai bisa langsung dihapus <br/>
-<img width="545" height="274" alt="2026-04-29 12:38:52" src="https://github.com/user-attachments/assets/8ebdb2d6-3973-4938-9baa-cf77a3ec826f" />
+Isi dari 'history.log', setelah selesai bisa langsung dihapus agar struktur repository sesuai dengan soal. <br/>
+<img width="545" height="274" alt="2026-04-29 12:38:52" src="https://github.com/user-attachments/assets/8ebdb2d6-3973-4938-9baa-cf77a3ec826f" /> <br/><br/>
 
 
+### Soal 2
+#### Struktur Repositori Soal 2 di Akhir
 
 
 
