@@ -1,3 +1,5 @@
+// Revisi Kode
+
 #include "arena.h"
 #include <sys/msg.h>
 #include <sys/shm.h>
