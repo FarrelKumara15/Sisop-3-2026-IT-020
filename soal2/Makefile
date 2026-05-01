@@ -1,3 +1,5 @@
+// Revisi Kode
+
 CC = gcc
 CFLAGS = -Wall
 LDFLAGS = -lrt
