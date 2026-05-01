@@ -141,6 +141,29 @@ Isi dari 'history.log', setelah selesai bisa langsung dihapus agar struktur repo
 
 Game ini bernama **Battle of Eterion** 
 
+<br/><br/>
+#### Jalankan Program
+Di terminal pertama
+<img width="372" height="200" alt="2026-05-01 14:23:04" src="https://github.com/user-attachments/assets/1bd09388-7561-4dbd-844d-9d1dc9049d3b" /> <br/><br/>
+
+Di terminal kedua dan ketiga <br/> 
+Fitur Login Character <br/>
+<img width="1897" height="230" alt="image" src="https://github.com/user-attachments/assets/04480de0-7b30-4aa2-8421-de878db8a5b7" /> <br/><br/>
+
+Fitur Register <br/>
+<img width="1905" height="570" alt="image" src="https://github.com/user-attachments/assets/20225f02-ac42-43e0-8940-c58637accea2" /> <br/><br/>
+
+Fitur Battle <br/>
+Tekan 
+<img width="1898" height="578" alt="2026-05-01 17:26:33" src="https://github.com/user-attachments/assets/4b8f63d7-7844-4ee6-8c01-075a5427b2c2" />
+ <br/><br/>
+
+
+
+
+
+
+
 
 
 
