@@ -154,9 +154,20 @@ Fitur Register <br/>
 <img width="1905" height="570" alt="image" src="https://github.com/user-attachments/assets/20225f02-ac42-43e0-8940-c58637accea2" /> <br/><br/>
 
 Fitur Battle <br/>
-Tekan 
-<img width="1898" height="578" alt="2026-05-01 17:26:33" src="https://github.com/user-attachments/assets/4b8f63d7-7844-4ee6-8c01-075a5427b2c2" />
- <br/><br/>
+Tekan "1.Battle", <br/>
+<img width="1900" height="554" alt="2026-05-01 17:59:11" src="https://github.com/user-attachments/assets/4f822b34-e8b8-4ea3-852c-356b8961c811" /> <br/>
+Tekan "a" untuk attack dan "u" untuk ultimate, setalah input langsung enter. <br/><br/>
+
+Fitur Armory <br/>
+<img width="322" height="748" alt="2026-05-01 17:31:42" src="https://github.com/user-attachments/assets/495cd761-b13f-450b-8cff-3ca681fb43de" /> <br/>
+Dengan menggunakan senjata menambah damage.
+
+Fitur Match History <br/>
+<img width="370" height="322" alt="2026-05-01 18:00:32" src="https://github.com/user-attachments/assets/4ec7e8e2-2bac-4572-b800-c48e87cea8fb" /> <br/><br/>
+
+
+
+
 
 
 
