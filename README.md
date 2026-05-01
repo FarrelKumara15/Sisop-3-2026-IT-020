@@ -137,6 +137,10 @@ Isi dari 'history.log', setelah selesai bisa langsung dihapus agar struktur repo
 
 ### Soal 2
 #### Struktur Repositori Soal 2 di Akhir
+<img width="310" height="193" alt="2026-05-01 00:25:24" src="https://github.com/user-attachments/assets/c3d46922-a47f-4293-8a8b-ab587326b742" /> <br/>
+
+Game ini bernama **Battle of Eterion** 
+
 
 
 
