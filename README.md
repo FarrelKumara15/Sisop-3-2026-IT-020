@@ -269,7 +269,7 @@ history_count++;
 Kode diatas berfungsi untuk menyimpan Match History. <br/>
 
 <br/><br/>
-#### Jalankan Program
+### Jalankan Program
 **Di terminal pertama**
 <img width="372" height="200" alt="2026-05-01 14:23:04" src="https://github.com/user-attachments/assets/1bd09388-7561-4dbd-844d-9d1dc9049d3b" /> <br/><br/>
 
