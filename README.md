@@ -139,7 +139,134 @@ Isi dari 'history.log', setelah selesai bisa langsung dihapus agar struktur repo
 #### Struktur Repositori Soal 2 di Akhir
 <img width="310" height="193" alt="2026-05-01 00:25:24" src="https://github.com/user-attachments/assets/c3d46922-a47f-4293-8a8b-ab587326b742" /> <br/>
 
-Game ini bernama **Battle of Eterion** 
+Game ini bernama **Battle of Eterion**, game multiplayer yang dibuat dengan konsep Inter Process Communication (IPC). <br/>
+Game ini bisa,
+- Register & Login
+- Matchmaking (PvP real-time)
+- Battle
+- Membeli senjata (Armory)
+- Melihat history battle
+
+#### 1. IPC Initialization
+```bash
+msgid = msgget(MSG_KEY, IPC_CREAT | 0666);
+```
+Kode diatas berfungsi untuk menghubungkan client <-> server. <br>
+
+#### 2. Request & Response System
+**Client mengirim request** <br/>
+```bash
+req.type = 1;
+req.action = 2; // login
+req.pid = getpid();
+
+msgsnd(msgid, &req, sizeof(req)-sizeof(long), 0);
+```
+**Client menerima response**
+```bash
+msgrcv(msgid, &res, sizeof(res)-sizeof(long),
+       TYPE_RESPONSE + getpid(), 0);
+```
+Kedua kode diatas membuat sistem menjadi multi-client. <br/>
+
+#### 3. Matchmaking
+Server: <br/>
+```bash
+if(waiting_pid == -1){
+    waiting_pid = req.pid;
+    strcpy(waiting_name, req.username);
+}
+else{
+    int p1 = waiting_pid;
+    int p2 = req.pid;
+
+    MatchMsg m1 = {TYPE_MATCH + p1, -1, 0, p2};
+    strcpy(m1.enemy_name, req.username);
+
+    MatchMsg m2 = {TYPE_MATCH + p2, -1, 1, p1};
+    strcpy(m2.enemy_name, waiting_name);
+
+    msgsnd(msgid, &m1, sizeof(m1)-sizeof(long), 0);
+    msgsnd(msgid, &m2, sizeof(m2)-sizeof(long), 0);
+
+    waiting_pid = -1;
+}
+```
+Kode diatas berfungsi untuk menemukan lawan, pairing 2 player secara real-time. <br/>
+
+#### 4. Shared Memory (Battle State)
+```bash
+int shmid = shmget(SHM_KEY, sizeof(SharedArena), IPC_CREAT | 0666);
+arena = (SharedArena*) shmat(shmid, NULL, 0);
+```
+Kode diatas untuk menyimpan HP dan room, kedua player akses data yang sama. <br/>
+
+#### 5. Room Allocation
+```bash
+if(my_pid < enemy_pid){
+    for(int i=0;i<MAX_ROOMS;i++){
+        if(!arena->rooms[i].used){
+            arena->rooms[i].used = 1;
+            arena->rooms[i].pid1 = my_pid;
+            arena->rooms[i].pid2 = enemy_pid;
+            arena->rooms[i].hp1 = 100;
+            arena->rooms[i].hp2 = 100;
+            sem_init(&arena->rooms[i].lock,1,1);
+
+            *my_slot = 0;
+            return i;
+        }
+    }
+}
+```
+Kode diatas untuk mencegah tidak menemukan room untuk battle, hanya 1 player yang membuat room. <br/>
+
+#### 6. Semaphore
+```bash
+sem_wait(&r->lock);
+
+if(my_slot==0)
+    r->hp2 -= dmg;
+else
+    r->hp1 -= dmg;
+
+sem_post(&r->lock);
+```
+Kode diatas untuk sinkronisasi HP agar tidak corrupt dan agar tidak terjadi race condition. <br/>
+
+#### 7. Real-Time Input System
+```bash
+fd_set set;
+struct timeval tv = {0,100000};
+
+FD_ZERO(&set);
+FD_SET(STDIN_FILENO, &set);
+
+int rv = select(STDIN_FILENO+1, &set, NULL, NULL, &tv);
+```
+Kode diatas berfungsi agar input tidak nge-freeze dan game terasa real-time. <br/>
+
+#### 8. Battle Mechanics
+```bash
+int dmg = getDamage(p);
+
+if(c=='a'){
+    r->hp2 -= dmg;
+}
+else if(c=='u' && p->weapon > 0){
+    r->hp2 -= dmg*3;
+}
+```
+Kode diatas berfungsi untuk menjalankan Attack & Ultimate. <br/>
+
+#### 9. Match History System
+```bash
+strcpy(history_list[history_count].opponent, enemy_name);
+strcpy(history_list[history_count].result, result);
+history_list[history_count].xp = p->xp;
+history_count++;
+```
+Kode diatas berfungsi untuk menyimpan Match History. <br/>
 
 <br/><br/>
 #### Jalankan Program
