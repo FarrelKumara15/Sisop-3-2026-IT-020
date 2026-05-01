@@ -143,29 +143,29 @@ Game ini bernama **Battle of Eterion**
 
 <br/><br/>
 #### Jalankan Program
-Di terminal pertama
+**Di terminal pertama**
 <img width="372" height="200" alt="2026-05-01 14:23:04" src="https://github.com/user-attachments/assets/1bd09388-7561-4dbd-844d-9d1dc9049d3b" /> <br/><br/>
 
-Di terminal kedua dan ketiga <br/> 
+**Di terminal kedua dan ketiga** <br/> 
 Fitur Login Character <br/>
 <img width="1897" height="230" alt="image" src="https://github.com/user-attachments/assets/04480de0-7b30-4aa2-8421-de878db8a5b7" /> <br/><br/>
 
-Fitur Register <br/>
+**Fitur Register** <br/>
 <img width="1905" height="570" alt="image" src="https://github.com/user-attachments/assets/20225f02-ac42-43e0-8940-c58637accea2" /> <br/><br/>
 
-Fitur Battle <br/>
+**Fitur Battle** <br/>
 Tekan "1.Battle", <br/>
 <img width="1900" height="554" alt="2026-05-01 17:59:11" src="https://github.com/user-attachments/assets/4f822b34-e8b8-4ea3-852c-356b8961c811" /> <br/>
 Tekan "a" untuk attack dan "u" untuk ultimate, setalah input langsung enter. <br/><br/>
 
-Fitur Armory <br/>
+**Fitur Armory** <br/>
 <img width="322" height="748" alt="2026-05-01 17:31:42" src="https://github.com/user-attachments/assets/495cd761-b13f-450b-8cff-3ca681fb43de" /> <br/>
 Dengan menggunakan senjata menambah damage.
 
-Fitur Match History <br/>
+**Fitur Match History** <br/>
 <img width="370" height="322" alt="2026-05-01 18:00:32" src="https://github.com/user-attachments/assets/4ec7e8e2-2bac-4572-b800-c48e87cea8fb" /> <br/><br/>
 
-
+Setelah selesai bisa langsung milih "4. Logout" untuk keluar
 
 
 
