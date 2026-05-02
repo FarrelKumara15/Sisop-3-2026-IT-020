@@ -120,7 +120,7 @@ Implementasi command admin.
 <br/><br/>
 
 #### Jalankan Program
-<img width="414" height="147" alt="2026-04-29 11:55:26" src="https://github.com/user-attachments/assets/cf414da6-9815-4aa9-bf7b-befba0f8b70e" /> <br/>
+<img width="411" height="169" alt="2026-05-02 23:40:11" src="https://github.com/user-attachments/assets/463de385-276e-431d-831f-107729855af8" /> <br/>
 Buka terminal baru <br/>
 <img width="418" height="130" alt="2026-04-29 12:31:42" src="https://github.com/user-attachments/assets/a69ad5b3-bb9d-423f-8016-3fdf1a29b22d" /> <br/>
 Buka terminal bari <br/>
