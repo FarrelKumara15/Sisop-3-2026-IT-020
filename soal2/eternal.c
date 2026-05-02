@@ -395,11 +395,11 @@ int main(){
 
                         while(1){
                             printf("\nGold: %d\n", p.gold);
-                            printf("1. Wood Sword\n");
-                            printf("2. Iron Sword\n");
-                            printf("3. Steel Axe\n");
-                            printf("4. Demon Blade\n");
-                            printf("5. God Slayer\n");
+                            printf("1. Wood Sword   (100 Gold)\n");
+                            printf("2. Iron Sword   (300 Gold)\n");
+                            printf("3. Steel Axe    (600 Gold)\n");
+                            printf("4. Demon Blade  (1500 Gold)\n");
+                            printf("5. God Slayer   (5000 Gold)\n");
                             printf("0. Back\n");
                             printf("Choice: ");
 
