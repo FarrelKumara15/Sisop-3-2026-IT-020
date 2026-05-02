@@ -286,7 +286,7 @@ Tekan "1.Battle", <br/>
 Tekan "a" untuk attack dan "u" untuk ultimate, setalah input langsung enter. <br/><br/>
 
 **Fitur Armory** <br/>
-<img width="322" height="748" alt="2026-05-01 17:31:42" src="https://github.com/user-attachments/assets/495cd761-b13f-450b-8cff-3ca681fb43de" /> <br/>
+<img width="278" height="743" alt="2026-05-03 00:50:44" src="https://github.com/user-attachments/assets/b2ca2944-ca19-42c1-a75c-fe53fc2541a7" /> <br/>
 Dengan menggunakan senjata menambah damage.
 
 **Fitur Match History** <br/>
